@@ -9,6 +9,9 @@ const gymQuote = quoteList => {
         message.push(wordArray[Math.floor(Math.random() * (wordArray.length - 1))])
     }
     if(Math.floor(Math.random() * 2) === 1){
-        message[message.length - 2] += "dedicated";
+        message[message.length - 3] += " dedicated";
     }
+    return message.join(' ');
 }
+
+console.log(gymQuote(gymWords));
